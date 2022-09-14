@@ -1,6 +1,5 @@
-import 'dart:ffi';
-
 import 'package:drug_app/src/common/style/style.dart';
+import 'package:drug_app/src/screens/detail_screen/antibiotic_screen.dart';
 import 'package:drug_app/src/screens/detail_screen/antibiotics_detail_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +62,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         GestureDetector(
                           onTap: () {
                             Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => AntibioticDetailScreen(),
+                              builder: (context) => AntibioticScreen(),
                             ));
                           },
                           child: Container(

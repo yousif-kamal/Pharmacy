@@ -3,6 +3,7 @@ import 'package:drug_app/src/screens/introduction_screen/onboarding_screen.dart'
 import 'package:drug_app/src/screens/main_screens/home_screen.dart';
 import 'package:drug_app/src/screens/main_screens/info.dart';
 import 'package:drug_app/src/screens/main_screens/search_screen.dart';
+import 'package:drug_app/src/screens/tabs_screen/all_tab.dart';
 import 'package:flutter/material.dart';
 
 class AntibioticScreen extends StatefulWidget {
@@ -31,7 +32,7 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
           title: Align(
             alignment: Alignment.center,
             child: Text(
-              'Tabs Demo',
+              'Antibiotics',
               style: GeneralStyle.Titledet,
             ),
           ),
@@ -42,16 +43,16 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
                 flex: 1,
                 child: Container(
                   height: 10,
-                  child: Text("data"),
+                  child: Text("Search"),
                 )),
             Expanded(
               flex: 9,
               child: TabBarView(
                 children: [
-                  infoScreen(),
-                  searchScreen(),
-                  HomeScreenView(),
-                  onBoardingScreen(),
+                  AllTab(),
+                  AllTab(),
+                  AllTab(),
+                  AllTab(),
                 ],
               ),
             ),
