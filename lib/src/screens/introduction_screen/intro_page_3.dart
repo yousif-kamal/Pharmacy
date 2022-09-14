@@ -34,38 +34,9 @@ class introPage3 extends StatelessWidget {
               "lorem jbdfkjvbdaoiwerafewofhbvierlvgle",
               style: GeneralStyle.additionalTextStyle1,
             ),
-            _registerbutton(context),
           ],
         ),
       ),
     );
   }
-}
-
-Widget _registerbutton(context) {
-  return SizedBox(
-    width: double.infinity,
-    child: ElevatedButton(
-      onPressed: () {
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => RegisterScreen(),
-        ));
-      },
-      style: ButtonStyle(
-        foregroundColor:
-            MaterialStateProperty.all<Color>(Color.fromARGB(255, 61, 66, 74)),
-        backgroundColor:
-            MaterialStateProperty.all<Color>(Color.fromARGB(255, 87, 189, 230)),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-          RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
-          ),
-        ),
-      ),
-      child: Padding(
-        padding: EdgeInsets.all(10),
-        child: Text("Create Account"),
-      ),
-    ),
-  );
 }

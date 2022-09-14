@@ -85,7 +85,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Align(
                       alignment: Alignment.topLeft,
                       child: Text(
-                        "7714551212",
+                        "07714551212",
                         style: GeneralStyle.additionalTextStyle1,
                         textAlign: TextAlign.left,
                       ),
@@ -160,7 +160,7 @@ Widget _Registerbutton(context) {
         padding: EdgeInsets.all(10),
         child: Text(
           "Register",
-          style: GeneralStyle.additionalTextStyle1,
+          style: GeneralStyle.additionalTextStyle2,
         ),
       ),
     ),

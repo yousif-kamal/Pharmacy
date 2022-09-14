@@ -1,4 +1,5 @@
 import 'package:drug_app/src/common/style/style.dart';
+import 'package:drug_app/src/screens/auth_screens/login_scree.dart';
 import 'package:drug_app/src/screens/auth_screens/start_screen.dart';
 import 'package:drug_app/src/screens/introduction_screen/intro_page_1.dart';
 import 'package:drug_app/src/screens/introduction_screen/intro_page_2.dart';
@@ -68,17 +69,8 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                   //next or done
                   onLastPage
                       ? GestureDetector(
-                          onTap: () async {
-                            Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
-                                builder: (context) => StartScreen(),
-                              ),
-                            );
-                          },
-                          child: Text(
-                            'Done',
-                            style: GeneralStyle.additionalTextStyle1,
-                          ),
+                          onTap: () async {},
+                          child: _registerbutton(context),
                         )
                       //
                       : GestureDetector(
@@ -98,4 +90,36 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
       ),
     );
   }
+}
+
+Widget _registerbutton(context) {
+  return SizedBox(
+    width: 100,
+    height: 45,
+    child: ElevatedButton(
+      onPressed: () {
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => RegisterScreen(),
+        ));
+      },
+      style: ButtonStyle(
+        foregroundColor:
+            MaterialStateProperty.all<Color>(Color.fromARGB(255, 61, 66, 74)),
+        backgroundColor:
+            MaterialStateProperty.all<Color>(Color.fromARGB(255, 87, 189, 230)),
+        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+        ),
+      ),
+      child: Padding(
+        padding: EdgeInsets.all(10),
+        child: Text(
+          "Done",
+          style: GeneralStyle.additionalTextStyle2,
+        ),
+      ),
+    ),
+  );
 }
