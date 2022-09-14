@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class AllTab extends StatefulWidget {
-  const AllTab({super.key});
+class AntiCell extends StatefulWidget {
+  const AntiCell({super.key});
 
   @override
-  State<AllTab> createState() => _AllTabState();
+  State<AntiCell> createState() => _AntiCellState();
 }
 
-class _AllTabState extends State<AllTab> {
+class _AntiCellState extends State<AntiCell> {
   List<DragsModel> _drugsModel = [];
   @override
   Widget build(BuildContext context) {

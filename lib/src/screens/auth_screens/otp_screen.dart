@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 
@@ -136,30 +135,6 @@ class _VerifyState extends State<Verify> {
                 ],
               ),
             ),
-            // SizedBox(
-            //   height: 18,
-            // ),
-            // Text(
-            //   "Didn't you receive any code?",
-            //   style: TextStyle(
-            //     fontSize: 14,
-            //     fontWeight: FontWeight.bold,
-            //     color: Colors.black38,
-            //   ),
-            //   textAlign: TextAlign.center,
-            // ),
-            // SizedBox(
-            //   height: 18,
-            // ),
-            // Text(
-            //   "Resend New Code",
-            //   style: TextStyle(
-            //     fontSize: 18,
-            //     fontWeight: FontWeight.bold,
-            //     color: Colors.purple,
-            //   ),
-            //   textAlign: TextAlign.center,
-            // ),
           ),
         ));
   }

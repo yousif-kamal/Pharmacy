@@ -4,10 +4,12 @@ import 'package:drug_app/src/screens/main_screens/home_screen.dart';
 import 'package:drug_app/src/screens/main_screens/info.dart';
 import 'package:drug_app/src/screens/main_screens/search_screen.dart';
 import 'package:drug_app/src/screens/tabs_screen/all_tab.dart';
+import 'package:drug_app/src/screens/tabs_screen/anti_cell_tab.dart';
+import 'package:drug_app/src/screens/tabs_screen/protein_synth.dart';
 import 'package:flutter/material.dart';
 
 class AntibioticScreen extends StatefulWidget {
-  const AntibioticScreen({super.key});
+  AntibioticScreen({super.key});
 
   @override
   State<AntibioticScreen> createState() => _AntibioticScreenState();
@@ -17,16 +19,25 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Color.fromARGB(255, 91, 151, 241),
-          bottom: const TabBar(
+          bottom: TabBar(
+            indicatorColor: Color.fromARGB(255, 255, 255, 255),
             tabs: [
-              Text("All"),
-              Text("One"),
-              Text("Two"),
-              Text("Three"),
+              Text(
+                "All",
+                style: GeneralStyle.additionalTextStyle2,
+              ),
+              Text(
+                "Anti Cell Wall Activity",
+                style: GeneralStyle.additionalTextStyle2,
+              ),
+              Text(
+                "Protein Synthesis",
+                style: GeneralStyle.additionalTextStyle2,
+              ),
             ],
           ),
           title: Align(
@@ -50,9 +61,8 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
               child: TabBarView(
                 children: [
                   AllTab(),
-                  AllTab(),
-                  AllTab(),
-                  AllTab(),
+                  AntiCell(),
+                  ProteinSynth(),
                 ],
               ),
             ),

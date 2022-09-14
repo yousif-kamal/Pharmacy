@@ -95,7 +95,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
 Widget _registerbutton(context) {
   return SizedBox(
     width: 100,
-    height: 45,
+    height: 40,
     child: ElevatedButton(
       onPressed: () {
         Navigator.of(context).push(MaterialPageRoute(

@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class AllTab extends StatefulWidget {
-  const AllTab({super.key});
+class ProteinSynth extends StatefulWidget {
+  const ProteinSynth({super.key});
 
   @override
-  State<AllTab> createState() => _AllTabState();
+  State<ProteinSynth> createState() => _ProteinSynthState();
 }
 
-class _AllTabState extends State<AllTab> {
+class _ProteinSynthState extends State<ProteinSynth> {
   List<DragsModel> _drugsModel = [];
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class _AllTabState extends State<AllTab> {
         stream: FirebaseFirestore.instance
             .collection("Drugs")
             .doc("Antibiotic")
-            .collection("Anti Cell Wall Activity")
+            .collection("Protein Synthesis")
             .snapshots(),
         builder: ((context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
