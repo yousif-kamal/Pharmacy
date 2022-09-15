@@ -36,9 +36,22 @@ class GeneralStyle {
     fontSize: 16,
     fontFamily: 'Roboto',
   );
+  static TextStyle Title11 = const TextStyle(
+    color: Color.fromARGB(255, 57, 120, 214),
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    fontFamily: 'Roboto',
+  );
 
   static TextStyle Titledet = const TextStyle(
     color: Color.fromARGB(255, 255, 255, 255),
+    fontSize: 24,
+    fontFamily: 'Roboto',
+  );
+
+  static TextStyle Titleregister = const TextStyle(
+    color: Color.fromARGB(255, 91, 151, 241),
+    fontWeight: FontWeight.w500,
     fontSize: 24,
     fontFamily: 'Roboto',
   );

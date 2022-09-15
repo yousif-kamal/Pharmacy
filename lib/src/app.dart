@@ -1,5 +1,6 @@
 import 'package:drug_app/src/screens/auth_screens/login_scree.dart';
 import 'package:drug_app/src/screens/auth_screens/otp_screen.dart';
+import 'package:drug_app/src/screens/auth_screens/register_screen.dart';
 import 'package:drug_app/src/screens/auth_screens/start_screen.dart';
 import 'package:drug_app/src/screens/detail_screen/antibiotics_detail_screen.dart';
 import 'package:drug_app/src/screens/detail_screen/antibiotic_screen.dart';
@@ -11,15 +12,16 @@ import 'package:drug_app/src/screens/main_screens/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get/get.dart';
 
 class Root extends StatelessWidget {
   const Root({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AntibioticScreen(),
+      home: RegisterSCreen(),
     );
   }
 }

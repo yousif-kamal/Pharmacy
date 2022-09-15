@@ -14,7 +14,19 @@ class AllTab extends StatefulWidget {
 }
 
 class _AllTabState extends State<AllTab> {
+  Query? MasterQuery;
+  Query query1 = FirebaseFirestore.instance
+      .collection("Drugs")
+      .doc("Antibiotic")
+      .collection("Anti Cell Wall Activity");
+
+  Query query2 = FirebaseFirestore.instance
+      .collection("Drugs")
+      .doc("Antibiotic")
+      .collection("Protein Synthesis");
+
   List<DragsModel> _drugsModel = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
