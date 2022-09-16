@@ -2,6 +2,7 @@ import 'package:drug_app/src/common/style/style.dart';
 import 'package:drug_app/src/common/widget/costume_button.dart';
 import 'package:drug_app/src/common/widget/costume_textfield.dart';
 import 'package:drug_app/src/common/widget/loading_indicator.dart';
+import 'package:drug_app/src/screens/auth_screens/handler_screen.dart';
 import 'package:drug_app/src/screens/auth_screens/register_screen.dart';
 import 'package:drug_app/src/screens/main_screens/buttom_navigation_bar.dart';
 import 'package:drug_app/src/services/auth_service.dart';
@@ -118,18 +119,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           isLoading = true;
                         });
                         //First step auth with firebase auth
-                        await authService.signInWithEmailAndPassword(
-                          email: emailController.text.trim(),
-                          password: passwordController.text.trim(),
-                        );
-                        setState(() {
-                          isLoading = false;
-                        });
-                        Get.to(() => bottomScreen());
-                        //.then((value) => Get.to(() => HandlerScreen())
-                        setState(() {
-                          isLoading = false;
-                        });
+                        await authService
+                            .signInWithEmailAndPassword(
+                                email: emailController.text.trim(),
+                                password: passwordController.text)
+                            .then(
+                                (value) => Get.to(() => const HandlerScreen()));
                       },
                       color: Color.fromARGB(255, 91, 151, 241),
                       text: Text('Login',
