@@ -1,5 +1,6 @@
 import 'package:drug_app/src/common/style/style.dart';
 import 'package:drug_app/src/screens/auth_screens/login_scree.dart';
+import 'package:drug_app/src/screens/auth_screens/register_screen.dart';
 import 'package:drug_app/src/screens/auth_screens/start_screen.dart';
 import 'package:drug_app/src/screens/introduction_screen/intro_page_1.dart';
 import 'package:drug_app/src/screens/introduction_screen/intro_page_2.dart';
@@ -69,8 +70,19 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                   //next or done
                   onLastPage
                       ? GestureDetector(
-                          onTap: () async {},
-                          child: _registerbutton(context),
+                          onTap: () async {
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    RegisterSCreen(),
+                              ),
+                            );
+                          },
+                          child: Text(
+                            'Done',
+                            style: GeneralStyle.additionalTextStyle1,
+                          ),
                         )
                       //
                       : GestureDetector(

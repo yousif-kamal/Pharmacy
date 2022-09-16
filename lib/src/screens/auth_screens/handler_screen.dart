@@ -19,12 +19,12 @@ class HandlerScreen extends StatelessWidget {
             return LoadingIndicator();
           } else if (snapshot.data == null) {
             return LoginScreen();
-          } else if (snapshot.hasError) {
+          } else if (snapshot.hasData) {
+            return bottomScreen();
+          } else {
             return Center(
               child: Text("error"),
             );
-          } else {
-            return bottomScreen();
           }
         },
       ),
