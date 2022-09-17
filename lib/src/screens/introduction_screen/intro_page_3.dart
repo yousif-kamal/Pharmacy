@@ -1,5 +1,4 @@
 import 'package:drug_app/src/common/style/style.dart';
-import 'package:drug_app/src/screens/auth_screens/login_scree.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';

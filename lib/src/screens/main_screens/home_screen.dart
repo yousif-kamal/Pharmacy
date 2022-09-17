@@ -1,6 +1,5 @@
 import 'package:drug_app/src/common/style/style.dart';
 import 'package:drug_app/src/screens/detail_screen/antibiotic_screen.dart';
-import 'package:drug_app/src/screens/detail_screen/antibiotics_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenView extends StatefulWidget {
