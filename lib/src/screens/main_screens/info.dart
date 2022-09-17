@@ -1,3 +1,5 @@
+import 'package:drug_app/src/common/widget/costume_button.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -9,7 +11,10 @@ class infoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("info"),
+        child: CostumeButton(
+            onPressedd: () => FirebaseAuth.instance.signOut(),
+            color: Color.fromARGB(255, 91, 151, 241),
+            text: Text("Log out")),
       ),
     );
   }
