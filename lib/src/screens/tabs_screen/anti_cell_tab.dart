@@ -21,8 +21,10 @@ class _AntiCellState extends State<AntiCell> {
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
         stream: FirebaseFirestore.instance
             .collection("Drugs")
-            .doc("Antibiotic")
-            .collection("Anti Cell Wall Activity")
+            .doc("Antibiotics")
+            .collection("Antibiotics")
+            .doc("Antibiotics")
+            .collection("Anti cell wall activity")
             .snapshots(),
         builder: ((context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {

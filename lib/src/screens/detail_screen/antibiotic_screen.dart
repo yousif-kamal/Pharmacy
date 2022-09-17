@@ -31,11 +31,11 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
                 style: GeneralStyle.additionalTextStyle2,
               ),
               Text(
-                "Anti Cell Wall Activity",
+                "Cell Wall",
                 style: GeneralStyle.additionalTextStyle2,
               ),
               Text(
-                "Protein Synthesis",
+                "Protein killer",
                 style: GeneralStyle.additionalTextStyle2,
               ),
             ],
@@ -50,12 +50,12 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
         ),
         body: Column(
           children: [
-            Expanded(
-                flex: 1,
-                child: Container(
-                  height: 10,
-                  child: Text("Search"),
-                )),
+            // Expanded(
+            //     flex: 1,
+            //     child: Container(
+            //       height: 10,
+            //       child: Text("Search"),
+            //     )),
             Expanded(
               flex: 9,
               child: TabBarView(

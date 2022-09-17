@@ -21,8 +21,10 @@ class _ProteinSynthState extends State<ProteinSynth> {
       body: StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
         stream: FirebaseFirestore.instance
             .collection("Drugs")
-            .doc("Antibiotic")
-            .collection("Protein Synthesis")
+            .doc("Antibiotics")
+            .collection("Antibiotics")
+            .doc("Antibiotics")
+            .collection("Protien synthesis")
             .snapshots(),
         builder: ((context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
