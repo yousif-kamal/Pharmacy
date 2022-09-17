@@ -1,6 +1,12 @@
 # drug_app
 
-A new Flutter project.
+Is a Flutter project, That is used to get detailed information on drugs.
+
+Who can use it ?
+Every one who wants to know more about drugs, students, pharmacists.
+
+
+- [Example](C:\Users\Yousif\Desktop\drug_app\gitDesign.jpg0;)
 
 ## Getting Started
 
