@@ -31,7 +31,7 @@ class _searchScreenState extends State<searchScreen> {
           backgroundColor: Color(0xfffffffff),
           elevation: 0.0,
           title: Text(
-            "Search by Generic name",
+            "Search by Brand name",
             style: TextStyle(
               fontFamily: 'Roboto',
               fontSize: 20,
@@ -92,7 +92,7 @@ class _searchScreenState extends State<searchScreen> {
                             ),
                             decoration: InputDecoration(
                                 border: InputBorder.none,
-                                hintText: 'Search by generic name',
+                                hintText: 'Search by brand name name',
                                 hintStyle: GeneralStyle.Title1),
                           ),
                         ),

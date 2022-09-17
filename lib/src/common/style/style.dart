@@ -8,7 +8,19 @@ class GeneralStyle {
     fontSize: 20,
     fontFamily: 'Roboto',
   );
+  static TextStyle introtop = const TextStyle(
+    color: Color.fromARGB(255, 216, 65, 158),
+    fontWeight: FontWeight.w500,
+    fontSize: 24,
+    fontFamily: 'Roboto',
+  );
 
+  static TextStyle introbot = const TextStyle(
+    color: Color.fromARGB(255, 91, 151, 241),
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    fontFamily: 'Roboto',
+  );
   static TextStyle additionalTextStyle1 = const TextStyle(
     color: Color.fromARGB(255, 91, 151, 241),
     fontWeight: FontWeight.w500,

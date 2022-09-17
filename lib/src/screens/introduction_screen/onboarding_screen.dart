@@ -86,7 +86,7 @@ class _onBoardingScreenState extends State<onBoardingScreen> {
                       : GestureDetector(
                           onTap: () {
                             _controller.nextPage(
-                                duration: Duration(microseconds: 500),
+                                duration: Duration(microseconds: 1000),
                                 curve: Curves.bounceOut);
                           },
                           child: Text(

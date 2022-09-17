@@ -23,15 +23,15 @@ class introPage1 extends StatelessWidget {
             Title(
                 color: Colors.black,
                 child: Text(
-                  "Drug App",
-                  style: GeneralStyle.additionalTextStyle,
+                  "WELCOME !",
+                  style: GeneralStyle.introtop,
                 )),
             SizedBox(
-              height: 25,
+              height: 30,
             ),
             Text(
-              "lorem jbdfkjvbdaoiwerafewofhbvierlvgle",
-              style: GeneralStyle.additionalTextStyle1,
+              "You've chosen the right app",
+              style: GeneralStyle.introbot,
             ),
           ],
         ),

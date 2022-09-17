@@ -16,7 +16,7 @@ class Root extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AntibioticScreen(),
+      home: onBoardingScreen(),
     );
   }
 }
